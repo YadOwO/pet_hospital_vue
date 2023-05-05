@@ -2,7 +2,7 @@
 import ajax from 'axios'
 // 新建一个新的axios实例
 const axios = ajax.create({
-  baseURL: 'http://123.57.109.30:8000' // 基地址
+  baseURL: 'http://127.0.0.1:3007' // 基地址
 })
 
 // 导出自定义函数, 参数对象解构赋值

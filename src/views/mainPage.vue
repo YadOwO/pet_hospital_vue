@@ -30,7 +30,9 @@ export default {
     height: 100%;
     width: 100%;
     .mainLeft {
+        flex: 0.93;
         margin-left: 50px;
+        margin-top: 50px;
     }
 }
 .shell {
