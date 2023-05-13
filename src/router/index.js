@@ -4,13 +4,19 @@ import mainPage from '@/views/mainPage'
 import userHandle from '@/views/user/userHandle'
 import doctorHandle from '@/views/doctor/doctorHandle'
 import petHandle from '@/views/pet/petHandle'
+import loginPage from '@/views/loginPage'
+import erweima from '@/views/erweima/erweimaShow'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    redirect: '/mainPage'
+    redirect: '/loginPage'
+  },
+  {
+    path: '/loginPage',
+    component: loginPage
   },
   {
     path: '/mainPage',
@@ -27,6 +33,10 @@ const routes = [
       {
         path: 'petHandle',
         component: petHandle
+      },
+      {
+        path: 'erweima',
+        component: erweima
       }
     ]
   }

@@ -11,7 +11,8 @@
     text-decoration: none;
 }
 body {
-    background-color: rgb(209, 213, 219);
+    // background-color: rgb(209, 213, 219);
+    background: linear-gradient(to top left,#ffe29f,#ffa99f,#ff719a);
     display: flex;
     justify-content: space-evenly;
     height: 100vh;

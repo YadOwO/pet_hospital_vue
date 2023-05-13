@@ -5,10 +5,10 @@
           <router-link to="/mainPage/userHandle" class="box"><i class="iconfont icon-cangku"></i><span>用户信息</span></router-link>
           <router-link to="/mainPage/doctorHandle" class="box"><i class="iconfont icon-zhuti_tiaosepan"></i><span>医生信息</span></router-link>
           <router-link to="/mainPage/petHandle" class="box"><i class="iconfont icon-qianbao"></i><span>宠物信息</span></router-link>
-          <router-link to="/picture" class="box"><i class="iconfont icon-tupian"></i><span>picture</span></router-link>
-          <router-link to="/qrcode" class="box"><i class="iconfont icon-erweima"></i><span>QR code</span></router-link>
-          <router-link to="/authentication" class="box"><i class="iconfont icon-dunpaibaoxianrenzheng"></i><span>authentication</span></router-link>
-          <router-link to="/cancellation" class="box"><i class="iconfont icon-dengchu"></i><span>cancellation</span></router-link>
+          <!-- <router-link to="/picture" class="box"><i class="iconfont icon-tupian"></i><span>picture</span></router-link> -->
+          <router-link to="/mainPage/erweima" class="box"><i class="iconfont icon-erweima"></i><span>QR code</span></router-link>
+          <!-- <router-link to="/authentication" class="box"><i class="iconfont icon-dunpaibaoxianrenzheng"></i><span>authentication</span></router-link> -->
+          <router-link to="/loginPage" class="box"><i class="iconfont icon-dengchu"></i><span>退出登录</span></router-link>
         </div>
         <div class="mainLeft">
             <router-view/>
@@ -42,8 +42,10 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(17, 24, 39);
-    border-radius: 10px;
+    background-color: rgb(242, 243, 244);
+    // border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     transition: .3s;
     overflow: hidden;
 }
@@ -54,9 +56,11 @@ export default {
     width: 85%;
     margin: 9px;
     border-radius: 5px;
+    // border-top-right-radius: 5px;
+    // border-bottom-right-radius: 5px;
     position: relative;
     transition: .3s;
-    color: rgb(160, 160, 175);
+    color: rgb(18, 24, 38);
 }
 .box i {
     font-size: 60px;
@@ -87,7 +91,7 @@ export default {
     width: 270px;
 }
 .box:hover{
-    background-color: rgb(55, 65, 81);
+    background-color: rgb(243, 167, 162);
 }
 .shell:hover span{
     opacity: 1;

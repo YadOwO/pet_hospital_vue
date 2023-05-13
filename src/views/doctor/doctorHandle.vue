@@ -2,7 +2,7 @@
   <div class="infoHandle">
     <div class="head">
       <h1 class="titleH">医生信息</h1>
-      <el-button type="info" class="addBtn" @click="addHandle">添加医生</el-button>
+      <el-button class="addBtn" @click="addHandle">添加医生</el-button>
     </div>
     <el-table
       :data="tableData.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()))"
@@ -47,7 +47,7 @@
         <template slot-scope="scope">
           <el-button
             size="mini"
-            @click="handleEdit(scope.row)">Edit</el-button>
+            @click="handleEdit(scope.row)">编辑医生</el-button>
           <el-button
             size="mini"
             type="danger"

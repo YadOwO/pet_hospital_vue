@@ -21,7 +21,7 @@ export const addoctorAPI = (data) => {
   })
 }
 
-// 医生 - 添加医生信息
+// 医生 - 删除医生信息
 export const deleteDoctorAPI = (id) => {
   return request({
     url: '/api/deleteDoctor',
@@ -47,5 +47,36 @@ export const updateDoctorAPI = (data) => {
     headers: {
       'content-type': 'application/x-www-form-urlencoded'
     }
+  })
+}
+
+// 用户 - 获取用户列表
+export const getUserListAPI = () => {
+  return request({
+    url: '/api/getUserList',
+    method: 'GET'
+  })
+}
+// 用户 - 添加用户
+export const addUserAPI = ({ username, password, nickname }) => {
+  return request({
+    url: '/api/reguser',
+    method: 'POST',
+    data: {
+      username,
+      password,
+      nickname
+    },
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded'
+    }
+  })
+}
+
+// 医生 - 删除医生信息
+export const deleteUserAPI = (id) => {
+  return request({
+    url: `/api/deleteUser?id=${id}`,
+    method: 'DELETE'
   })
 }
