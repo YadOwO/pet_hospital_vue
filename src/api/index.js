@@ -57,6 +57,7 @@ export const getUserListAPI = () => {
     method: 'GET'
   })
 }
+
 // 用户 - 添加用户
 export const addUserAPI = ({ username, password, nickname }) => {
   return request({
@@ -78,5 +79,13 @@ export const deleteUserAPI = (id) => {
   return request({
     url: `/api/deleteUser?id=${id}`,
     method: 'DELETE'
+  })
+}
+
+// 用户 - 获取用户列表
+export const getAllPetAPI = () => {
+  return request({
+    url: '/api/getAllPet',
+    method: 'GET'
   })
 }

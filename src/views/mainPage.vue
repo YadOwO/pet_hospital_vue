@@ -1,7 +1,7 @@
 <template>
     <div class="mainPage">
         <div class="shell">
-          <router-link to="/list" class="box"><i class="iconfont icon-liebiao"></i><span>list</span></router-link>
+          <router-link to="/mainPage/homePage" class="box"><i class="iconfont icon-liebiao"></i><span>list</span></router-link>
           <router-link to="/mainPage/userHandle" class="box"><i class="iconfont icon-cangku"></i><span>用户信息</span></router-link>
           <router-link to="/mainPage/doctorHandle" class="box"><i class="iconfont icon-zhuti_tiaosepan"></i><span>医生信息</span></router-link>
           <router-link to="/mainPage/petHandle" class="box"><i class="iconfont icon-qianbao"></i><span>宠物信息</span></router-link>

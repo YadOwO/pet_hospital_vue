@@ -6,6 +6,7 @@ import doctorHandle from '@/views/doctor/doctorHandle'
 import petHandle from '@/views/pet/petHandle'
 import loginPage from '@/views/loginPage'
 import erweima from '@/views/erweima/erweimaShow'
+import homePage from '@/views/home/homePage'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,10 @@ const routes = [
       {
         path: 'erweima',
         component: erweima
+      },
+      {
+        path: 'homePage',
+        component: homePage
       }
     ]
   }

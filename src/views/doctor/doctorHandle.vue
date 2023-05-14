@@ -37,6 +37,10 @@
         prop="skilled">
       </el-table-column>
       <el-table-column
+        label="简介"
+        prop="profile">
+      </el-table-column>
+      <el-table-column
         align="right">
         <!-- <template slot="header" slot-scope="scope">
           <el-input
